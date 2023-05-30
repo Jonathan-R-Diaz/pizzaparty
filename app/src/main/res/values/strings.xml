@@ -6,6 +6,7 @@
     <string name="light">Light</string>
     <string name="medium">Medium</string>
     <string name="v_hungry">Ravenous</string>
+    <string name="total_pizzas">Total pizzas: ?</string>
     <string name="total_pizzas_num">Total pizzas: %d</string>
     <string name="button_text">CALCULATE</string>
 </resources>
