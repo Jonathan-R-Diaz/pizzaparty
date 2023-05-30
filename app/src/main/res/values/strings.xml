@@ -10,4 +10,9 @@
     <string name="total_pizzas_num">Total pizzas: %d</string>
     <string name="button_text">CALCULATE</string>
     <string name="total_pizza_default">Total pizzas: 0</string>
+    <string-array name="hunger_array">
+        <item>Light</item>
+        <item>Medium</item>
+        <item>Ravenous</item>
+    </string-array>
 </resources>

@@ -41,45 +41,21 @@
         android:layout_marginTop="@dimen/default_margin"
         android:text="@string/how_hungry"
         android:textSize="24sp"
-        android:labelFor="@id/hungry_radio_group"
+        android:labelFor="@id/hungry_spinner"
 
         app:layout_constraintLeft_toLeftOf="@id/num_people_text"
         app:layout_constraintTop_toBottomOf="@id/num_people_text"/>
 
-    <RadioGroup
-        android:id="@+id/hungry_radio_group"
+    <Spinner
+        android:id="@+id/hungry_spinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
 
         app:layout_constraintLeft_toLeftOf="@id/how_hungry_text"
         app:layout_constraintTop_toBottomOf="@id/how_hungry_text">
-        <RadioButton
-            android:id="@+id/light_radio_button"
-            android:text="@string/light"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
 
-            app:layout_constraintLeft_toLeftOf="@id/how_hungry_text"
-            app:layout_constraintTop_toBottomOf="@id/how_hungry_text"/>
-        <RadioButton
-            android:id="@+id/medium_radio_button"
-            android:text="@string/medium"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:checked="true"
-
-            app:layout_constraintLeft_toRightOf="@id/light_radio_button"
-            app:layout_constraintTop_toBottomOf="@id/how_hungry_text"/>
-        <RadioButton
-            android:id="@+id/ravenous_radio_button"
-            android:text="@string/v_hungry"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            app:layout_constraintLeft_toRightOf="@id/medium_radio_button"
-            app:layout_constraintTop_toBottomOf="@id/how_hungry_text" />
-    </RadioGroup>
+    </Spinner>
 
     <TextView
         android:id="@+id/num_pizzas_text_view"
@@ -89,8 +65,8 @@
         android:layout_marginTop="@dimen/default_margin"
         android:textSize="24sp"
 
-        app:layout_constraintLeft_toLeftOf="@id/hungry_radio_group"
-        app:layout_constraintTop_toBottomOf="@id/hungry_radio_group"
+        app:layout_constraintLeft_toLeftOf="@id/hungry_spinner"
+        app:layout_constraintTop_toBottomOf="@id/hungry_spinner"
         />
 
     <Button
