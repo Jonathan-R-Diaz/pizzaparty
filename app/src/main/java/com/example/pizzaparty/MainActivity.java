@@ -1,6 +1,9 @@
 package com.example.pizzaparty;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioGroup;
@@ -24,6 +27,21 @@ public class MainActivity extends AppCompatActivity {
         mNumAttendEditText = findViewById(R.id.num_attend_edit_text);
         mNumPizzasTextView = findViewById(R.id.num_pizzas_text_view);
         mHowHungryRadioGroup = findViewById(R.id.hungry_radio_group);
+
+        mNumAttendEditText.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                mNumPizzasTextView.setText(R.string.total_pizza_default);
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {}
+            // Add the missing code here
+        });
+
     }
 
     public void calculateClick(View view) {

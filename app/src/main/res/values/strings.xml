@@ -9,4 +9,5 @@
     <string name="total_pizzas">Total pizzas: ?</string>
     <string name="total_pizzas_num">Total pizzas: %d</string>
     <string name="button_text">CALCULATE</string>
+    <string name="total_pizza_default">Total pizzas: 0</string>
 </resources>
